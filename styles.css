@@ -46,6 +46,320 @@ h3 {;position: absolute;
 }
 
 
+/*
+-------------------------------------------------------------------------
+____________________ACORDEON____________________________//////////////////
+
+
+BACKGROUND---¬
+background-color:color 	                         property specifies the background color of an element.
+background-image:url("paper.gif")                property specifies an image to use as the background, is repeated it covers the entire 
+background-repeat:repeat-x;repeat-y;no repeat;   property repeats an image both horizontally and vertically
+background-position: right, top, left, bottom;   property is used to specify the position of the background image
+background-attachment:scroll; fixed;             Sets whether a background image is fixed or scrolls with the rest of the page
+
+background shorthand property
+To specify all the background properties in one single property. This is shorthand property.
+Instead of writing:
+p {background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;}
+The shorthand property to set the background properties in one declaration:
+p {background: #ffffff url("img_tree.png") no-repeat right top;}
+
+BORDERS------¬
+border-style:             property specifies what kind of border to display
+            :dotted  
+            :dashed 
+            :solid 
+            :double 
+            :groove 3D    grooved border. The effect depends on the border-color value
+            :ridge 3D     ridged border. The effect depends on the border-color value
+            :inset 3D     inset border. The effect depends on the border-color value
+            :outset 3D    outset border. The effect depends on the border-color value
+            :none         no border
+            :hidden       hidden border
+border-width property specifies the width of the four borders. can be set as in px, pt, cm, em
+border-color property is used to set the color of the four borders.
+
+border shorthand:
+border-width
+border-style (required)
+border-color
+p {border: 5px solid red;}
+border-radius: 5px;                 property is used to add rounded borders
+border-radius: 15px 50px 30px 5px;  (first top-left, second top-right, third bottom-right, fourth bottom-left corner
+
+border-image            allows you to specify an image to be used instead of the normal border around an element.
+                           The property has three parts:-The image to use as the border
+                           															-Where to slice the image;
+                           															-Define whether the middle sections should be repeated or stretched
+border-image shorthand property
+border-image-source 
+border-image-slice
+border-image-width
+border-image-outset
+border-image-repeat
+
+MARGIN---------¬
+margin shorthand property for the following individual margin properties:
+margin-top
+margin-right
+margin-bottom
+margin-left
+margin: 25px 50px 75px 100px
+
+margin:auto; horizontally center the element within its container
+
+
+PADDING------¬
+padding: shorthand property for the following individual padding properties:
+padding-top
+padding-right
+padding-bottom
+padding-left
+padding: 25px 50px 75px 100px;
+
+HEIGHT/WIDTH-----¬
+height:	    Sets the height of an element
+max-height:	Sets the maximum height of an element
+min-height:	Sets the minimum height of an element
+width:  	Sets the width of an element
+max-width:	Sets the maximum width of an element   <--RESPONSIVE    
+min-width:	Sets the minimum width of an element
+
+
+TEXT-----¬
+color:                                                    set color. specified name:"red"; HEX:"#ff0000"; RGB:"rgb(255,0,0)"
+text-align: left or right, centered, or justified;        property set the horizontal alignment
+text-align-last:                                          property specifies how to align the last line of text
+direction:rtl                                             change the text direction 
+text-decoration-line: overline, underline, line-through;  property is used to add line to text.
+text-decoration-color:                                    property is used to set the color of the decoration line
+text-decoration-style: solid, double, dotted, etc;        property is used to set the style of the decoration line
+text-decoration-thickness:auto, 1px, 10px;                property is used to set the thickness of the decoration line
+text-decoration: underline red double 5px;                SHORTHAND
+text-decoration:none;                                     is used to remove the underline from links
+text-transform:uppercase, lowercase, capitalize;          property is used to specify uppercase and lowercase letters 
+text-indent:50px;                                         property is used to specify the indentation of the first line
+letter-spacing:15px, -2px;                                property is used to specify the space between the characters
+line-height:1.5, 0.8;                                     property is used to specify the space between lines
+word-spacing: 5px, -2px;                                  property is used to specify the space between the words
+white-space:nowrap;                                       property specifies how white-space inside an element is handled
+text-shadow:2px 2px 5px red;                              property adds shadow. blur effect 5px
+font-family:"Times New Roman", Times, serif;              property should hold several font names as a "fallback" system, 
+
+Start with the font you want, and end with generic family. The font names should be separated with comma
+Serif -formality and elegance.
+Sans-serif -modern and minimalistic look.
+Monospace fonts -mechanical look. 
+Cursive fonts imitate human handwriting.
+Fantasy fonts are decorative/playful fonts.
+----SAFE FONTS----
+Arial -sansserif
+Verdana -sansserif
+Tahoma -sansserif
+Trebuchet MS -sansserif
+Times New Roman -serif
+Georgia -serif
+Garamond -serif
+Courier New -monospace
+Brush Script MT -cursive
+font-style:normal, italic, oblique; property is mostly used to specify italic text
+font-weight:normal, bold;           property specifies the weight
+font-variant:normal, small-caps;    property specifies whether or not a text should be displayed in a small-caps font
+font-size:5px, 1.85em, 10vw; property sets the size
+font: shorthand property for:
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+ font: 20px Arial, sans-serif;
+ font: italic small-caps bold 12px/30px Georgia, serif;
+GOOGLE FONTS---------¬
+<head> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+<style> 
+h1.a {font-family: "Audiowide", sans-serif;}
+h1.b {font-family: "Sofia", sans-serif;}
+h1.c {font-family: "Trirong", serif;}
+</style>
+</head>
+<body>.            GOOGLE EFFECTS
+<h1 class="font-effect-neon">Neon Effect</h1>
+<h1 class="font-effect-outline">Outline Effect</h1>
+<h1 class="font-effect-emboss">Emboss Effect</h1>
+<h1 class="font-effect-shadow-multiple">Multiple Shadow Effect</h1>
+</body>
+
+LINKS-------------¬
+a:link {color: red;}       /* unvisited link 
+a:visited {color: green;}. /* visited link 
+a:hover {color: hotpink;}. /* mouse over link 
+a:active {color: blue;     /* selected link 
+		background-color: yellow}
+:hover MUST come after :link and :visited to be effective! 
+:active MUST come after :hover in to be effective!
+
+BUTTONS-----------¬  
+combine several CSS properties to display links as boxes/buttons
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;}
+a:hover, a:active {
+  background-color: red;}
+
+LISTAS-------------¬
+list-style-type: circle, square;           property specifies the type of unorder listmarker
+list-style-type: upper-roman, lower-roman; property specifies the type of order listmarker
+list-style-image: url('sqpurple.gif');     specifies an image as the list item marker
+list-style-position: outside, inside;      property specifies the position of the list-item markers
+
+TABLAS--------------¬
+border: 1px solid;
+table {width: 100%;
+	   height: 70px;
+	   padding: 15px}
+border-collapse: collapse;           borders should be collapsed into a single border:
+text-align: left, right, center;     property sets the horizontal alignment
+vertical-align: top, bottom, middle; property sets the vertical alignment 
+border-bottom: 1px solid #ddd;       property for horizontal dividers
+
+tr:hover {background-color: coral;}  highlight table rows on mouse over
+tr:nth-child(even) {background-color: red;} For zebra-striped tables
+
+
+DISPLAY-------------¬
+display:block, inline, none;   property specifies if/how an element is displayed
+visibility:hidden;             also hides as display:none but still affect the layout
+display: inline-block          allows to set swidth and height Also,top and bottom margins/paddings are respected
+
+POSITION-------------¬
+position: static, relative, fixed, absolute, sticky;    property specifies positioning
+static   - DEFAULT- is not positioned in any special way; it is always positioned according to the normal flow of the page
+relative - positioned relative to its normal position
+fixed    - positioned relative to viewport, always stays in the same place even if scrolled. Top, right, bottom, and left are used
+absolute - is positioned relative to the nearest positioned ancestor; instead of relative to the viewport, like fixed
+sticky   - is positioned based on the user scroll position
+
+z-index:-1, 5, 20; property specifies the stack order of an element
+
+
+OVERFLOW------¬
+overflow:            property specifies to clip the content or add scrollbars when the content is too big to fit in the specified area.
+		:  visible - Default. The overflow is not clipped. The content renders outside the element's box
+		:  hidden  - The overflow is clipped, and the rest of the content will be invisible
+		:  scroll  - The overflow is clipped, and a scrollbar is added to see the rest of the content
+		:  auto    - Similar to scroll, but it adds scrollbars only when necessary
+overflow-x:        - specifies what to do with the left/right edges of the content.
+overflow-y:        - specifies what to do with the top/bottom edges of the content.
+overflow-wrap:     - property specifies whether or not the browser can break lines with long words
+             :normal	    Long words will not break, even if they overflow the container. This is default	
+             :anywhere	    Long words will break if they overflow the container	
+             :break-word	Long words will break if they overflow the container	
+             :initial	    Sets this property to its default value. Read about initial	
+             :inherit	    Inherits this property from its parent elemen
+
+FLOAT/CLEAR----------¬
+float:         property specifies how an element should float.
+     : left    The element floats to the left of its container
+     : right   The element floats to the right of its container
+     : none    The element does not float         <---DEFAULT
+     : inherit The element inherits the float value of its parent
+
+clear:        property specifies what elements can float beside the cleared element and on which side
+     :none    The element is not pushed below left or right floated elements. This is default
+     :left    The element is pushed below left floated elements
+     :right   The element is pushed below right floated elements
+     :both    The element is pushed below both left and right floated elements
+     :inherit The element inherits the clear value from its parent
+
+CENTRAR OBJETOS------¬
+para centrar horizontal un block elemen,like <div>, usa margin: auto; has no effect if width property is not set or set to 100%
+centrar texto, use text-align: center;
+para centrar imagen, set left and right margin to auto and make a block element
+img {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;}
+otra es position: absolute; are removed from the normal flow, and can overlap elements
+p {position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;}
+use the float property: 
+If is taller than the containing, and it is floated, will overflow outside, "clear: left, right, both" to fix this 
+p {float: right;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;}
+
+top and bottom padding:
+p {padding: 70px 0;
+  border: 3px solid green;}
+otra es con positioning and the transform property:
+p {margin: 0;
+  position: absolute;
+  top:50%;
+  left: 50%;
+ transform: translate(-50%, -50%)}
+
+COMBINANDO SELECTORES------¬
+div p 	   Selects all <p> elements inside <div> elements
+div > p	   Selects all <p> elements where the parent is a <div> element
+div + p	   Selects the first <p> element that are placed immediately after <div> elements
+p ~ ul	   Selects every <ul> element that are preceded by a <p> element
+
+
+
+SELECTORES POR ATRIBUTO-----¬
+a[target]	               Selects all elements with a target attribute	
+a[target="_blank"]	     Selects all elements with target="_blank"
+a[title~="flower"]			 Selects all elements with a title attribute containing the word "flower"
+a[lang|="en"]						 Selects all elements with a lang attribute value starting with "en"
+a[href^="https"]				 Selects every <a> element whose href attribute value begins with "https"
+a[href$=".pdf"]					 Selects every <a> element whose href attribute value ends with ".pdf"
+a[href*="w3schools"]		 Selects every <a> element whose href attribute value contains the substring "w3schools"
+
+UNIDADES----------¬
+ABSOLUTES    
+Any of these will appear as exactly that size
+cm	-  centimeters
+mm	-  millimeters
+in	-  inches (1in = 96px = 2.54cm)
+px  - 	pixels (1px = 1/96th of 1in)
+pt	-  points (1pt = 1/72 of 1in)
+pc	-  picas (1pc = 12 pt)
+RELATIVOS
+Specify a length relative to another length property. Relative units scale better between different rendering mediums.
+em	-		Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex	-		Relative to the x-height of the current font (rarely used)	
+ch	-		Relative to width of the "0" (zero)	
+rem	-		Relative to font-size of the root element	
+vw	-		Relative to 1% of the width of the viewport 	* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm
+vh	-		Relative to 1% of the height of the viewport	* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm 
+vmin-		Relative to 1% of viewport's* smaller dimension	
+vmax-		Relative to 1% of viewport's* larger dimension	
+%	  -		Relative to the parent element
+
+ESPECIFICIDAD-------¬
+There are four categories which define the specificity level of a selector:
+1- Inline styles - Example: <h1 style="color: pink;">
+2- IDs - Example: #navbar
+3- Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+4- Elements and pseudo-elements - Example: h1, ::before
+
+!important rule, it will override ALL previous styling rules for that specific property on that element
+Do not use it unless you absolutely have to.
+
+
 
 
 

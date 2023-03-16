@@ -51,3 +51,317 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Comments are not displayed in the browser
+!*************************************************************************
+-------------------------------------------------------------------------
+____________________ACORDEON____________________________//////////////////
+linea<hr>     <b>negrita.             
+corte<br>     <i>italica 
+poema <pre>  <ins>subrayado
+<del>- rayado
+<strong>comonegrita
+<mark> - marcatexto
+<sub> - Subscript text
+<sup> - Superscript text
+<em> - Emphasized text
+<small> - Smaller text
+
+<a href="url">TEXTO DEL LINK</a> 
+<a href="url/" target="_self">Opens same window/tab----¡DEFAULT!</a>
+<a href="url/" target="_blank"> Opens new window or tab</a>
+<a href="url/" target="_parent"> - Opens the parent frame</a>
+<a href="url/" target="_top"> - Opens full body of the window</a>
+
+/**********************IMAGEN EN LINK-¬
+<a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+/**********************TAMAÑOS IMAGEN-¬
+<img src="img_girl.jpg" alt="alitas" width="500" height="600">
+<img src="img_girl.jpg" alt="jacket" style="width:500px;height:600px;">
+
+/********************** LOGO EN BROWSER-¬
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+/************************************************************RESPONSIVE TRUCOS----¬
+IMAGEN <img src="img_girl.jpg" style="width:100%;">
+LIMITE <img src="img_girl.jpg" style="max-width:100%;height:auto;">
+TAMAÑOS MISMO SPOT <picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+TEXTO <h1 style="font-size:10vw">Hello World</h1>
+MEDIA QUERIES 
+
+
+/**************************************************HEAD----¬
+<head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>
+
+The Title element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab
+	 <title>A Meaningful Page Title</title>
+
+The <style> element is used to define style information for a single HTML page:
+<style>
+  body {background-color: powderblue;}
+  h1 {color: red;}
+  p {color: blue;}
+</style>
+
+The <link> tag is most often used to link to external style sheets:
+<link rel="stylesheet" href="mystyle.css">
+
+The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.
+Define the character set used:
+<meta charset="UTF-8"> 
+<meta name="keywords" content="HTML, CSS, JavaScript"> Define keywords for search engines:
+<meta name="description" content="Free Web tutorials"> Description web page
+<meta name="author" content="John Doe">Define author
+<meta http-equiv="refresh" content="30">Refresh every 30 seconds
+<meta name="viewport" content="width=device-width, initial-scale=1.0">Set viewport to make website look good all devices
+
+The <base> element specifies the base URL and/or target for all relative URLs in a page.
+<base href="https://www.w3schools.com/" target="_blank">
+
+/************************************************************.   LAYOUT ELEMTS.    ------¬
+<header> - Defines a header for a document or a section
+<nav> - Defines a set of navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent, self-contained content
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details that the user can open and close on demand
+<summary> - Defines a heading for the <details> element
+
+SEMANTICOS EN HTML
+<article> element specifies independent, self-contained content.
+	<article class="all-browsers">
+  <h1>Most Popular Browsers</h1>
+  <article class="browser">
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+  </article>
+</article>
+
+<aside> defines some content aside from the content it is placed in (like a sidebar).
+	<aside>
+<h4>Epcot Center</h4>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+<details>Defines additional details that the user can view or hide
+
+<figcaption>
+<figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+The figcaption tag defines a caption for a figure element. The caption> element can be placed as the first or as the last child of a fig element.
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli">
+  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+</figure>
+
+<footer> authorship-copyrightinfo-contactinfo-sitemap-backtotop-links -related documents
+	<footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+	</footer>
+
+<header> element represents a container for introductory content or a set of navigational links.
+	<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p>
+</article>
+
+<main> Specifies the main content of a document
+
+<mark> Defines marked/highlighted text
+
+<nav> element defines a set of navigation links
+	<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+
+<section> element defines a section in a document.
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<summary> Defines a visible heading for a <details> element
+
+<time> Defines a date/time
+
+
+
+/******************************************************LISTAS----¬
+desordenada
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+list-style-type CAMBIA PUNTITO 
+disc	Sets the list item marker to a bullet (default)
+circle	Sets the list item marker to a circle
+square	Sets the list item marker to a square
+none	The list items will not be marked
+
+ordenada
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+type CAMBIA NUMEROS
+type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"	The list items will be numbered with lowercase roman numbers
+
+descripciones
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+/******************************************************TABLAS--------¬
+<table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Defines a row in a table
+<td>	Defines a cell in a table
+<th colspan - rowspan="2"> 
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table
+
+
+/******************************************************.     FORMULARIOS.   -------¬
+<form> element is used to create an HTML form for user input; such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+<input> element is the most used form element, can be displayed in many ways, depending on the type attribute.
+accept-charset	Specifies the character encodings used for form submission
+action	Specifies where to send the form-data when a form is submitted
+autocomplete	Specifies whether a form should have autocomplete on or off
+enctype	Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+method	Specifies the HTTP method to use when sending form-data
+name	Specifies the name of the form
+novalidate	Specifies that the form should not be validated when submitted
+rel	Specifies the relationship between a linked resource and the current document
+target	Specifies where to display the response that is received after submitting the form
+FORM element can contain one or more of the following form elements:
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+      type="button"> defines button
+      type="checkbox"> defines a checkbox
+      type="color"> is used for input fields that should contain a color
+      type="date">  is used for input fields that should contain a date
+      type="datetime-local"> specifies a date and time input field, with no time zone
+      type="email">  is used for input fields that should contain an e-mail address.
+      type="file"> defines a file-select field and a "Browse" button for file uploads
+      type="hidden"> defines a hidden input field (not visible to a user) Do not use hidden inputs as a form of security!!!
+      type="image"> defines an image as a submit button
+      type="month"> allows the user to select a month and year
+      type="number"> defines a numeric input
+      type="password"> defines a password field
+      type="radio"> defines a radio button
+      type="range"> defines a control for entering a number whose exact value is not important
+      type="reset"> defines a reset button that will reset all form values to their default values
+      type="search"> is used for search fields (a search field behaves like a regular text field)
+      type="submit"> defines a button for submitting form data to a form-handler.The form-handler is typically a server page with a script for processing input data. The form-handler is specified in the form's action attribute
+      type="tel">  is used for input fields that should contain a telephone number
+      type="text"> defines a single-line text input field (((DEFAULT)))
+      type="time"> allows the user to select a time (no time zone)
+      type="url"> is used for input fields that should contain a URL address
+      type="week"> allows the user to select a week and year
+<textarea> (text area)
+	<textarea name="message" style="width:200px; height:600px;">
+The cat was playing in the garden.
+</textarea>
+
+<label>	Defines a label for an <input> element
+<label for="cars">Choose a car:</label>
+
+<fieldset>	Groups related elements in a form
+<legend> Caption for a fieldset>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+	<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+<button>	Defines a clickable button
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+<datalist>	Specifies a list of pre-defined options for input controls
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+
+<output>	Defines the result of a calculation
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+/******************************************************COMPUTECODE-----¬
+The <kbd> element defines keyboard input
+The <samp> element defines sample output from a computer program
+The <code> element defines a piece of computer code
+The <var> element defines a variable in programming or in a mathematical expression
+The <pre> element defines preformatted text
+
+
+-->
